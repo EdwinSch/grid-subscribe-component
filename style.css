@@ -1,0 +1,124 @@
+/* INIT */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* STYLING (Mobile First) */
+body {
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    background: #e6eff6;
+}
+
+main {
+    border: solid red 1px;
+    max-width: 630px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.component {
+    /* border: solid blue 1px; */
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* JOIN US Component */
+.joinus {
+    min-height: 265px;
+    background: white;
+}
+
+h1 {
+    color: #31afac;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 18px;
+}
+
+.joinus>p {
+    color: #adb0b7;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* SUBSCRIPTION Component */
+
+.subscription {
+    min-height: 230px;
+    background-color: #2bb3b1;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    color: red;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.price>span {
+    margin-right: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.subscription>p {
+    color: white;
+    font-size: 18px;
+}
+
+button {
+    height: 50px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(71, 64%, 44%);
+}
+
+/* WHY US Component */
+.whyus {
+    min-height: 230px;
+    background: #4abebd;
+}
+
+ul {
+    list-style: none;
+    color: #ace8f0;
+    font-weight: 300;
+    line-height: 20px;
+}
