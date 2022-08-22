@@ -19,16 +19,13 @@ body {
 }
 
 main {
-    border: solid red 1px;
     max-width: 630px;
     height: auto;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
 }
 
 .component {
-    /* border: solid blue 1px; */
     width: 100%;
     padding: 25px;
     display: flex;
@@ -88,10 +85,11 @@ h3 {
 
 .subscription>p {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 button {
+    margin-top: 20px;
     height: 50px;
     font-family: 'Karla', sans-serif;
     font-size: 16px;
@@ -121,4 +119,34 @@ ul {
     color: #ace8f0;
     font-weight: 300;
     line-height: 20px;
+}
+
+/* RESPONSIVE Desktop */
+@media screen and (min-width: 630px) {
+    main {
+        height: 475px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .component {
+        width: 100%;
+        padding: 35px;
+    }
+
+    .joinus {
+        width: 100%;
+        min-height: 215px;
+    }
+
+    .subscription {
+        flex: 1;
+        min-height: 260px;
+    }
+
+    .whyus {
+        flex: 1;
+        min-height: 260px;
+    }
+
 }
